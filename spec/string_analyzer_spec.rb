@@ -33,12 +33,12 @@ describe StringAnalyzer do
 
     it "Should detect when a string contains all letters , numbers and puncuation" do
         s1 = StringAnalyzer.new()
-        expect(s1.has_vowels?("abcde55345&??")).to be false
+        expect(s1.has_vowels?("abcde55345&??")).to be true
     end
 
     it "Should detect when a string contains numbers and puncuation only" do
         s1 = StringAnalyzer.new()
-        expect(s1.has_vowels?("423432%%%^&")).to be true
+        expect(s1.has_vowels?("423432%%%^&")).to be false
     end
     
 
